@@ -1,0 +1,70 @@
+<!-- this is a button to trigger the form below --> 
+
+<button
+  type="button"
+  class="btn btn-outline-dark m-auto ms-20"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+>
+  Create New Project
+</button>
+
+<!-- this is the form that will pop up according to bootstrap when click the button above -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a new project</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form action="/project/create" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name of your project"
+          required
+          class="form-control"
+          id="namelabel"
+        />
+        <textarea
+          name="description"
+          placeholder="Write something about your project..."
+          required
+          class="form-control"
+          id="inputPassword3"
+          style="height: 100px"
+        ></textarea>
+        <input
+          type="text"
+          name="author"
+          placeholder="Author"
+          required
+          class="form-control"
+          id="authorlabel"
+        />
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button class=" btn btn-outline-dark" type="submit">create project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
