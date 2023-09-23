@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const url = 'mongodb://127.0.0.1:27017/issueDB';
+const url =
+  'mongodb+srv://sh66825hs:<password>@issue-cluster.dssured.mongodb.net/'
 
 mongoose.connect(url);
 

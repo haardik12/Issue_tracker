@@ -5,7 +5,7 @@ const port = 5000;
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'assets')))
 
 app.set('layout extractStyles', true);
