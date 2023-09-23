@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const url =
-  'mongodb+srv://sh66825hs:<password>@issue-cluster.dssured.mongodb.net/'
+  'mongodb+srv://sh66825hs:Haardik@12345@issue-cluster.dssured.mongodb.net/'
 
 mongoose.connect(url);
 
